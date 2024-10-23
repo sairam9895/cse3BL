@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Hotel Booking Form</h2>
+<form id="bookingForm" onsubmit="return validateBookingForm()">
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName">
+
+    <label for="checkIn">Check-in Date:</label>
+    <input type="date" id="checkIn" name="checkIn">
+
+    <label for="checkOut">Check-out Date:</label>
+    <input type="date" id="checkOut" name="checkOut">
+
+    <label for="roomType">Room Type:</label>
+    <input type="radio" name="roomType" value="Single"> Single
+    <input type="radio" name="roomType" value="Double"> Double
+    <input type="radio" name="roomType" value="Suite"> Suite
+
+    <label for="extras">Extras:</label>
+    <input type="checkbox" name="extras" value="Breakfast"> Breakfast
+    <input type="checkbox" name="extras" value="Gym Access"> Gym Access
+    <input type="checkbox" name="extras" value="Airport Pickup"> Airport Pickup
+
+    <label for="requests">Additional Requests:</label>
+    <textarea id="requests" name="requests" rows="3"></textarea>
+
+    <input type="submit" value="Book Now">
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+javascript
+function validateBookingForm() {
+    var fullName = document.getElementById("fullName").value;
+    var checkIn = document.getElementById("checkIn").value;
+    var checkOut = document.getElementById("checkOut").value;
+    var roomType = document.querySelector('input[name="roomType"]:checked');
+    
+    if (fullName === "" || checkIn === "" || checkOut === "" || !roomType) {
+        alert("Please fill out all required fields.");
+        return false;
+    }
+    return true;
+}
